@@ -1,0 +1,246 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------------------------------------
+
+            Custom Styling
+
+--------------------------------------------*/
+
+
+/* Styling the html by fonts and box-sizing */
+
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    margin: 10px;
+    box-sizing: border-box;
+   }
+
+body{
+    line-height: 1.5;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+/* sytling the page by putting everything in the middle */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* all images on the page should be 100% width */
+
+img{
+    width: 100%;
+}
+
+
+/* Making the logo small */
+
+.logo{
+    width: 150px;
+}
+
+
+
+
+/* Styling the apply now form */
+.form{
+    
+    width:420px;
+    text-align: center;
+    box-shadow:1px 1px 50px;
+    border-radius: 1rem;
+    margin: 30px;
+}
+
+/* Styling the heading's of the page by selecting different font sizes */
+
+.h1 h1{
+    font-size: 3.052rem;
+    font-weight: bold;
+}
+
+.h2 h2{
+    font-size: 2.441rem;
+    font-weight: bold;
+}
+
+.h3 h3{
+    font-size: 1.420rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    background-color:#57eeab;
+    text-align: center;
+}
+
+h4{
+    font-size: 1.563rem;
+   
+}
+
+p{
+    padding: 8px;
+    margin: 6px;
+}
+
+/* styling the calculate button */
+
+.calc{
+    font-size: 1.563rem;
+    font-weight: bold;
+    background-color:#ff8480;
+    margin: 20px;
+    width: 380px;
+    border-radius:1rem;
+    text-align: center;
+    color: white;
+}
+
+/* Selecting background color for the footer */
+
+Footer{
+    background-color:#fffd8c;
+   
+}
+
+footer h4{
+    padding: 10px;
+}
+
+/* Styling the hours and city form by using flex */
+
+.hours{
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling the social media buttons by using flex */
+
+.scl{
+    display: flex;
+    justify-content: space-around;
+    margin: 6px;
+}
+
+
+/*---------------------------------------------------------------
+
+                Styling the Desktop 
+
+-----------------------------------------------------------------*/
+
+
+
+/* Styling the form by position absolute to move to the right place */
+
+
+@media screen and (min-width: 768px){
+    .form{
+        position: absolute;
+        left:1000px;
+        top:50px;
+    }
+
+    /* Styling the header by moving the img and the heading to the right position */
+
+    h1{
+        position: relative;
+       
+    }
+
+    .h1 p{
+        position: relative;
+       
+    }
+   .h1 img{
+       max-width: 50%;
+       position: relative;
+       left: 250px;
+       top: -400px;
+       z-index: -1;
+   }
+
+   .h1 div{
+       max-width: 500px;
+   }
+
+   /* Styling the calculate button by moving to the right place */
+
+
+   .calc{
+      display: flex;
+      justify-content: center;
+      
+   }
+
+   /* Styling the hours and city form by using flex to position */
+   .hours{
+       display: flex;
+       justify-content: start;
+       margin: 50px;
+      }
+
+      /* Styling the socail media buttons by using grid */
+
+    .scl{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        justify-items: right;
+       
+     }
+}
