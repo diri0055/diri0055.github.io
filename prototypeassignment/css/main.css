@@ -1,0 +1,801 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* --------------------------------------------------------------------
+
+                     Custom Styling  
+---------------------------------------------------------------------- */
+
+/* styling the html with fonts and box-sizing */
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* styling the about page with font family, size and line-height */
+
+.all{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+body{
+    line-height: 1.5;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+/* styling all images with width of 100% */
+
+img{
+    width: 100%;
+}
+
+/* styling all heading with sizes and margin */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+h1{
+    font-size: 4.063rem;
+}
+
+h2{
+    font-size: 3.375rem;
+}
+
+h3{
+    font-size: 2.25rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+h5{
+    font-size: 1rem;
+}
+
+p{
+    margin: 1em 0;
+}
+
+/* using class container to put all element in the middle of the page */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* styling the header with background color */
+
+header{
+    background-color: #3c3b39;
+}
+
+/* change the size of the logo to 150px */
+
+header img{
+    max-width: 150px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.lg{
+    display: flex;
+    justify-content: center; 
+}
+
+/* using flex to position the navigation */
+
+div li a{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+
+
+.grid1 p{
+    color: #3c3b39;
+}
+
+/* styling the top button with grid and background color */
+
+.button {
+    
+    display: grid;
+    
+    grid-row: 2/span 2;
+    width: 400px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.button button{
+    background-color: #26a683;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    
+}
+
+
+.who,
+.bwlng,
+.fitnes,
+.clim,
+.break
+{
+    background-color: #f2f2f2;
+}
+
+.sub button{
+    
+    border: 1px solid green;
+    border-radius: 40px;
+    background-color: #26a683;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+    color: white;
+    font-size: 20px;
+   }
+
+.sub{
+    background-color: #3c3b39;
+    color: white;
+    text-align: center;
+}
+
+.ad{
+    width: 200px;
+}
+
+.aboutimg h2{
+    
+    text-align: center;
+    position: relative;
+    margin-bottom: -200px;
+    color: white;
+}
+
+.services h2{
+    text-align: center;
+    position: relative;
+    margin-bottom: -200px;
+    color: white;
+}
+
+.services{
+    margin-top: 120px;
+}
+
+
+
+.dmg img{
+    margin-bottom: 100px;
+}
+
+
+
+.clim img{
+  display: none;
+}
+
+.break img{
+    display: none;
+}
+
+.bwlng img{
+    display: none;
+}
+
+.fitnes img{
+    display: none;
+}
+
+.special h2{
+   
+    text-align: center;
+}
+
+.bowling{
+    display: flex;
+    
+    max-width: 20px;
+    
+}
+
+.bowling p{
+    padding-right: 15px;
+}
+
+svg{
+    max-width: 150px;
+}
+
+div i{
+ color: green;
+
+}
+
+h6{
+    color: green;
+    font-size: 20px;
+}
+
+.learn{
+    
+    display: flex;
+    justify-content: center
+}
+
+.learn button{
+    background-color: #26a683;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.grid3{
+    background-color: #3c3b39;
+    color: white;
+}
+
+.simon{
+    padding: 15px;
+}
+
+/* styling the one of the images with flex and border-radius to make it round */
+
+.grid3 img{
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 300px;
+    margin: auto;
+}
+
+.grid4 img{
+    display: grid;
+    grid-column: 2/span 3;
+   
+    
+}
+
+/* styling the discover entertainment area with grid */
+
+.disc{
+    display: grid;
+    grid-row: 1/span 1;
+}
+
+
+
+h5{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+h4{
+    color: green;
+}
+
+/* styling the last button of the page */
+
+.last button{
+    background-color: #26a683;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+   
+}
+
+/* styling the footer with background color and font color */
+
+footer{
+    background-color: #3c3b39;
+    color: white;
+    
+}
+
+/* styling the socail media buttons with flex */
+
+.scl{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.top{
+  position: relative;
+  margin-left: 10px;
+}
+
+/*------------------------------------------------------
+            styling the contact page
+-------------------------------------------------------*/
+/* Styling the contact page with font famliy, size and background color */
+.mid{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5; 
+    background-color: #ffffff;
+}
+
+/* Styling the form of the contact page with background color, font size, and border radius */
+
+.form{
+    background-color: #26a683;
+    color: white;
+    padding-left: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.form input{
+    border-radius: 20px;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Styling the button */
+
+div button{
+    background-color: #3c3b39;
+    color: white;
+    width: 300px;
+    border-radius:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+h5{
+    padding-left: 2px;
+}
+
+
+/* ------------------------------------------------------
+                 Styling the desktop
+----------------------------------------------------------*/
+
+/* styling the desktop with media quary */
+
+@media screen and (min-width: 600px){
+    html{
+        font-size: 16px;
+    }
+
+    /* styling the navigation with flex */
+
+    div li a{
+        display: flex;
+        justify-self: right;
+    }
+
+    /* positioning the logo with flex */
+
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 310px;
+        margin-top: -10px;
+        margin-bottom: -45px;
+    }
+
+    /* styling the navigation with flex */
+
+    .nav ul{
+        display: flex;
+        justify-content: flex-end;
+        
+   }
+
+   li{
+      padding-right: 250px;
+   }
+
+    .button{
+        width: 250px;
+      
+    }
+
+    /* styling the grid1 class with grid */
+
+    .grid1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    /* positioning the image with grid */
+    .dimg{
+        display: grid;
+        grid-column: 2/span 1;
+        grid-row: 1 / span1;
+        padding-top: 2rem;
+    }
+
+    .grid1 img{
+        width: 500px;
+    }
+
+    .bowling{
+        width: 300px;
+    }
+
+    /* styling the class grid2 with grid and background color */
+
+   .grid2{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       background-color: #f2f2f2;
+    }
+
+   .grid2 p,
+   h3,
+   h6{
+       padding: 15px;
+   }
+
+   /* styling the grid3 class with grid */
+
+   .grid3{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+   }
+
+   /* styling the grid3 image with width of 200px */
+
+   .grid3 img{
+       width: 200px;
+   }
+
+   /* styling the grid4 class grid */
+
+   .grid4{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       margin-top: 30px;
+   }
+
+   .grid4 h3,
+   h4,
+   p{
+       padding: 15px;
+   }
+
+   .last{
+       padding: 15px;
+   }
+
+   .grid4 h3{
+       margin-top: -6px;
+   }
+
+   /* styling the grid4 class image with width of 550px */
+
+   .grid4 img{
+       width: 550px;
+   }
+
+   .grid4 h4{
+       margin-top: -36px;
+   }
+
+   
+}
+
+/*---------------------------------------------------------------
+               styling desktop about page
+-----------------------------------------------------------------*/
+@media screen and (min-width: 600px){
+
+
+/* using grid to layout this section */
+
+.gr1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+    
+}
+
+/* Positioning the image by using grid column and grid row */
+
+.dmg{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 3/1;
+}
+
+.cons h1{
+    font-size: 40px;
+    margin-bottom: -20px;
+}
+
+/* using grid to layout this section */
+
+.who{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+
+/* Styling the image with object fit, width, height and margin */
+
+.aboutimg img{
+  width:100%;
+  height:300px;
+  object-fit: cover;
+  margin-top: 40px;
+}
+
+/* styling the heading about with position relative, font color and position */
+
+.aboutimg h2{
+    
+    text-align: center;
+    position: relative;
+    margin-bottom: -200px;
+    color: white;
+}
+
+/* Styling the service image with object fit, width, height and position */
+
+.services img{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+    margin-top: 40px;
+}
+
+.services h2{
+
+    text-align: center;
+    position: relative;
+    margin-bottom: -200px;
+    color: white;
+}
+
+/* using display block to show the image on the desktop */
+
+.break img{
+    display: block;
+    padding-right: 20px;
+}
+
+/* using grid to do the layout of this section */
+
+.break{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nbreak{
+    margin-top:-50px;
+}
+
+.nbreak h4{
+    margin-top: -30px;
+}
+
+.nbreak p{
+    margin-top: -30px;
+}
+
+.bwlng img{
+    display: block;
+}
+
+/* using grid to do the layout of this section */
+
+.bwlng{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* using grid column to postion the image */
+
+.bwlng img{
+    display: grid;
+    grid-column: 2/3;
+}
+/* Using grid row to position the class comp */
+
+.comp{
+    display: grid;
+    grid-row: 1/2;
+    margin-top:-50px;
+}
+
+.comp h4{
+    margin-top: -50px;
+}
+
+.comp p{
+    margin-top: -50px;
+}
+
+/* using display block to show the image on the desktop */
+
+.fitnes img{
+    display: block;
+  
+}
+
+/* styling the class fitnes with grid for the layout */
+
+.fitnes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.new h2{
+    margin-top: -10px;
+   
+}
+
+.new{
+    padding-left: 20px;
+}
+
+.new h4{
+    margin-top: -30px;
+}
+
+.new p{
+    margin-top: -30px;
+}
+/* using display block to show the image on the desktop */
+
+.clim img{
+    display: block;
+}
+
+/* styling the class clim with grid for the layout */
+
+.clim{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.clim img{
+    display: grid;
+    grid-column: 2/3;
+}
+
+.ind{
+    display: grid;
+    grid-row: 3/1;
+}
+/* styling the class g1 with grid for the layout contact page */
+
+.g1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.g1 img{
+    width: 400px;
+}
+
+.form{
+    display: grid;
+    grid-row: 1/2;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.text{
+    display: grid;
+    grid-row: 1/2;
+}
+.text p{
+    margin-top: -100px;
+}
+
+/* styling the class g2 with grid for the layout */
+
+.g2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

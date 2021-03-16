@@ -1,0 +1,23 @@
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+@media only screen and (min-width:600px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 2px;
+        
+    }
+
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
